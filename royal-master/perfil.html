@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="image/resized_new_image.png" type="image/png">
+    <title>Cadastro - MyFitMenu</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="vendors/linericon/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        .register_form_inner {
+            background: #f9f9ff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .register_form_inner h3 {
+            margin-bottom: 30px;
+            font-size: 24px;
+            color: #222222;
+            font-weight: 600;
+            text-align: center;
+        }
+        .register_form_inner .form-control {
+            margin-bottom: 20px;
+        }
+        .register_form_inner .btn {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!--================Área do Cabeçalho =================-->
+    <header class="header_area">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- Marca e toggle agrupados para melhor exibição em dispositivos móveis -->
+                <a class="navbar-brand logo_h" href="index.html"><img src="image/logo_with_text_resized_200x65.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Coleta de links de navegação, formulários e outros conteúdos para alternar -->
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav ml-auto">
+
+                        <li class="nav-item"><a class="nav-link" href="index_logado.html">Início</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="index.html">Sair</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--================Área do Cabeçalho =================-->
+
+    <section class="banner_area">
+        <div class="booking_table d_flex align-items-center">
+            <div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+            <!--================Register Area =================-->
+        <div class="container" style="padding-top: 3%;">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="register_form_inner">
+                        <h3>Cadastro de Usuário</h3>
+                        <form class="row register_form" action="index.html" method="post" id="registerForm">
+                            <div class="col-md-6 form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Nome Completo" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nome Completo'" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email'" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Senha" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Senha'" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="password" class="form-control" id="confirm_password" name="confirm_password" placeholder="Confirmar Senha" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Confirmar Senha'" required>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="street" name="street" placeholder="Rua" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Rua'" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="text" class="form-control" id="city" name="city" placeholder="Cidade" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Cidade'" required>
+                            </div>
+                            <div class="col-md-4 form-group">
+                                <input type="text" class="form-control" id="state" name="state" placeholder="Estado" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Estado'" required>
+                            </div>
+                            <div class="col-md-2 form-group">
+                                <input type="text" class="form-control" id="zip" name="zip" placeholder="CEP" onfocus="this.placeholder = ''" onblur="this.placeholder = 'CEP'" required>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="card_number" name="card_number" placeholder="Número do Cartão" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Número do Cartão'" required>
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="text" class="form-control" id="card_name" name="card_name" placeholder="Nome no Cartão" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nome no Cartão'" required>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <input type="text" class="form-control" id="expiry_date" name="expiry_date" placeholder="Validade (MM/AA)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Validade (MM/AA)'" required>
+                            </div>
+                            <div class="col-md-3 form-group">
+                                <input type="text" class="form-control" id="cvv" name="cvv" placeholder="CVV" onfocus="this.placeholder = ''" onblur="this.placeholder = 'CVV'" required>
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <button type="submit" value="submit" class="btn theme_btn button_hover">Cadastrar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--================Register Area =================-->
+
+        </div>
+    </section>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <script src="vendors/bootstrap-datepicker/bootstrap-datetimepicker.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="vendors/lightbox/simpleLightbox.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            var password = document.getElementById('password').value;
+            var confirm_password = document.getElementById('confirm_password').value;
+
+            if (password !== confirm_password) {
+                alert('As senhas não coincidem');
+                return;
+            }
+
+            alert('Cadastro realizado com sucesso!');
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
